@@ -1,9 +1,22 @@
 ---
   el:
     hosts:
-      centos8:
+      docker_py_01:
         ansible_connection: docker
   deb:
     hosts:
-      ubuntu:
+      docker_py_02:
         ansible_connection: docker
+  local:
+    hosts:
+      centos8:
+        ansible_connection: local
+      ubuntu:
+        ansible_connection: local
+  local:
+    hosts:
+      localhost_01:
+        ansible_connection: local
+      localhost_02:
+        ansible_connection: local
+      
