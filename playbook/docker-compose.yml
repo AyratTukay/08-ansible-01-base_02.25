@@ -1,0 +1,12 @@
+services:
+  centos8:
+    image: pycontribs/centos:8
+    container_name: centos8
+    restart: unless-stopped
+    entrypoint: "sleep infinity"
+  ubuntu:
+    image: pycontribs/ubuntu
+    container_name: ubuntu
+    restart: unless-stopped
+    entrypoint: "sleep infinity"
+  
